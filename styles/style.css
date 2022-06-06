@@ -70,3 +70,22 @@ nav .buttons button:last-child:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+/* Splash div */
+.splash {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 120px;
+}
+.splash h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--primary-color);
+}
+.splash input {
+    border-radius: 12px;
+    width: 365px;
+    padding: 15px 20px;
+    margin-top: 30px;
+    font-family: var(--main-font);
+}

@@ -125,3 +125,93 @@ nav .buttons button:last-child:hover {
     color: var(--text-color);
     margin-bottom: 15px;
 }
+/* Media queries */
+/* Media query for mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+    nav h1 {
+        margin-left: 20px;
+        font-size: 24px;
+    }
+    nav .buttons {
+        margin-right: 20px;
+    }
+    .splash {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 0;
+    }
+    .splash h1 {
+        text-align: center;
+        font-size: 28px;
+        width: 100%;
+        line-height: 1.2;
+    }
+    .splash input {
+        width: 260px;
+    }
+    .activity h1 {
+        font-size: 16px;
+        text-align: center;
+        margin: 30px 0;
+    }
+    .activity .container div {
+        margin: 0 0 20px 0 !important;
+        width: 300px;
+    }
+    .activity .container div h1 {
+        font-size: 16px;
+    }
+    .activity .container div p {
+        font-size: 12px;
+    }
+}
+/* Media query for iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    nav h1 {
+        margin-left: 40px;
+        font-size: 30px;
+    }
+    nav .buttons {
+        margin-right: 40px;
+    }
+    .splash {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 0;
+    }
+    .splash h1 {
+        text-align: center;
+        font-size: 36px;
+        line-height: 1.1;
+    }
+    .splash input {
+        width: 360px;
+    }
+    .activity h1 {
+        font-size: 24px;
+        text-align: center;
+        margin: 30px 0;
+    }
+    .activity .container div {
+        margin-right: 30px;
+        width: 360px;
+    }
+    .activity .container div:nth-child(3n) {
+        margin-right: 30px;
+    }
+    .activity .container div h1 {
+        font-size: 20px;
+    }
+    .activity .container div p {
+        font-size: 15px;
+    }
+}
+/* Media query for small screens and laptops */
+@media (min-width: 769px) and (max-width: 1135px) {
+    .activity .container div:nth-child(2n) {
+        margin-right: 0;
+    }
+}

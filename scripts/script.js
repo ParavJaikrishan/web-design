@@ -45,19 +45,19 @@ const businessArr = activityArr.filter(i => i.type == "business");
 
 programmingArr.forEach(program => {
     let div = document.createElement("div");
-    div.innerHTML = ```
+    div.innerHTML = `
         <img src="${program.image}" alt="${program.title}"/>
         <h1>${program.title}</h1>
         <p>By ${program.creator}</p>
-    ```;
+    `;
     programmingContainer.appendChild(div);
 });
 businessArr.forEach(business => {
     let div = document.createElement("div");
-    div.innerHTML = ```
+    div.innerHTML = `
         <img src="${business.image}" alt="${business.title}"/>
         <h1>${business.title}</h1>
         <p>By ${business.creator}</p>
-    ```;
+    `;
     businessContainer.appendChild(div);
 });

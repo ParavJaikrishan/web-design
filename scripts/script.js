@@ -43,7 +43,7 @@ const activityArr = [
 const programmingArr = activityArr.filter(i => i.type == "programming");
 const businessArr = activityArr.filter(i => i.type == "business");
 
-programmingArr.forEach((program, index) => {
+programmingArr.forEach(program => {
     let div = document.createElement("div");
     div.innerHTML = ```
         <img src="${program.image}" alt="${program.title}"/>
@@ -52,7 +52,7 @@ programmingArr.forEach((program, index) => {
     ```;
     programmingContainer.appendChild(div);
 });
-businessArr.forEach((business, index) => {
+businessArr.forEach(business => {
     let div = document.createElement("div");
     div.innerHTML = ```
         <img src="${business.image}" alt="${business.title}"/>

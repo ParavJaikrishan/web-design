@@ -1,0 +1,52 @@
+/** CSS variables */
+:root {
+    --main-font: "Montserrat";
+    --secondary-font: "Inter";
+    --primary-color: "#FFFFFF";
+    --header-color: "#000000";
+    --secondary-color: "#474554";
+}
+/* CSS reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button, input, img {
+    border: none;
+    outline: none;
+}
+/** Navbar */
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+}
+nav h1 {
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-left: 100px;
+    font-weight: 700;
+}
+nav .buttons {
+    margin-right: 100px;
+}
+/** General styling for all buttons */
+nav .buttons button {
+    background: none;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 70px;
+}
+nav .buttons button:hover {
+    cursor: pointer;
+}
+nav .buttons button.selected {
+    font-weight: 600;
+    pointer-events: none;
+}

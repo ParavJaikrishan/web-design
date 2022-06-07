@@ -32,15 +32,16 @@ nav h1 {
     font-family: var(--main-font);
     text-transform: uppercase;
     font-size: 18px;
-    margin-left: 100px;
+    margin-left: 70px;
     font-weight: 700;
 }
 nav .buttons {
-    margin-right: 100px;
+    margin-right: 70px;
 }
 /** General styling for all buttons */
 nav .buttons button {
     font-family: var(--main-font);
+    color: var(--secondary-color);
     font-weight: 400;
     font-size: 18px;
     margin-left: 70px;
@@ -90,5 +91,31 @@ nav .buttons button.selected {
 }
 .splash .information button:hover {
     background-color: var(--primary-color);
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+}
+/** Projects div */
+.projects {
+    width: 100%;
+    background-color: var(--primary-color);
+}
+.projects .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px 70px 0 70px;
+}
+.projects .heading h1 {
+    font-family: var(--main-font);
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+.projects .heading input {
+    border: 1px solid #A8A8A8;
+    border-radius: 9px;
+    padding: 10px;
+    width: 300px;
+    font-family: var(--secondary-font);
+}
+.projects .heading input::placeholder {
+    letter-spacing: 1px;
 }

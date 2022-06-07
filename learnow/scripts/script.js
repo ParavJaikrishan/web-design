@@ -83,4 +83,3 @@ searchBar.addEventListener("input", e => {
         }
     });
 });
-console.log("Hello");

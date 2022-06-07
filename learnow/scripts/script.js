@@ -1,5 +1,6 @@
 const programmingContainer = document.querySelector("#programming-container");
 const businessContainer = document.querySelector("#business-container");
+const searchBar = document.querySelector("#search-bar");
 
 const activityArr = [
     {
@@ -61,3 +62,25 @@ businessArr.forEach(business => {
     `;
     businessContainer.appendChild(div);
 });
+
+const programDivs = document.querySelectorAll("#programming-container div");
+const businessDivs = document.querySelectorAll("#business-container div");
+
+searchBar.addEventListener("input", e => {
+    let val = e.target.value.toLowerCase();
+    programmingArr.forEach((program, index) => {
+        if(!program.title.toLowerCase().includes(val) && !program.creator.toLowerCase().includes(val)) {
+            programDivs[index].style.display = "none";
+        } else {
+            programDivs[index].style.display = "block";
+        }
+    });
+    businessArr.forEach((business, index) => {
+        if(!business.title.toLowerCase().includes(val) && !business.creator.toLowerCase().includes(val)) {
+            businessDivs[index].style.display = "none";
+        } else {
+            businessDivs[index].style.display = "block";
+        }
+    });
+});
+console.log("Hello");

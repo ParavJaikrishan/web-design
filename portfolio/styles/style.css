@@ -2,9 +2,9 @@
 :root {
     --main-font: "Montserrat";
     --secondary-font: "Inter";
-    --primary-color: "#FFFFFF";
-    --header-color: "#000000";
-    --secondary-color: "#474554";
+    --primary-color: #FFFFFF;
+    --header-color: #000000;
+    --secondary-color: #474554;
 }
 /* CSS reset */
 * {
@@ -15,10 +15,13 @@
 button, input, img {
     border: none;
     outline: none;
+    background: none;
+}
+button:hover {
+    cursor: pointer;
 }
 /** Navbar */
 nav {
-    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,16 +40,55 @@ nav .buttons {
 }
 /** General styling for all buttons */
 nav .buttons button {
-    background: none;
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 18px;
     margin-left: 70px;
 }
-nav .buttons button:hover {
-    cursor: pointer;
-}
 nav .buttons button.selected {
     font-weight: 600;
     pointer-events: none;
+}
+/** Splash div */
+.splash {
+    background: url("../images/computer-bg.png") no-repeat fixed;
+    background-size: cover;
+    height: 450px;
+}
+.splash .information {
+    background-color: var(--primary-color);
+    height: 100%;
+    width: 750px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.splash .information * {
+    margin-left: 90px;
+    width: fit-content;
+}
+.splash .information h1 {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-size: 52px;
+}
+.splash .information p {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.splash .information button {
+    font-family: var(--secondary-font);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    transition: all 0.6s ease;
+}
+.splash .information button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color)
 }

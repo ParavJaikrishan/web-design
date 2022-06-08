@@ -139,7 +139,7 @@ nav .buttons button.selected {
     margin-top: 5px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 550px) {
     nav h1 {
         font-size: 14px;
         margin-left: 20px;
@@ -193,6 +193,61 @@ nav .buttons button.selected {
     .projects .project-container div {
         margin: 0 auto 20px;
         transform: scale(0.9);
+    }
+    .projects .project-container div h1 {
+        font-size: 18px;
+    }
+}
+@media (min-width: 551px) and (max-width: 768px) {
+    nav h1 {
+        font-size: 16px;
+        margin-left: 40px;
+    }
+    nav .buttons {
+        margin-right: 40px;
+    }
+    nav .buttons button {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .splash .information {
+        margin: 0 auto;
+        width: 90%;
+        height: 100%;
+    }
+    .splash .information * {
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .splash .information h1 {
+        width: 100%;
+    }
+    .splash .information p {
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .splash .information button {
+        margin: 0 auto;
+    }
+    .projects .heading {
+        margin: 90px 40px 0 40px;
+    }
+    .projects .heading h1 {
+        font-size: 18px;
+    }
+    .projects .heading input {
+        width: 220px;
+        padding: 10px;
+    }
+    .projects .project-container {
+        width: 100%;
+        justify-content: center;
+    }
+    .projects .project-container div {
+        margin: 0 auto 20px;
     }
     .projects .project-container div h1 {
         font-size: 18px;

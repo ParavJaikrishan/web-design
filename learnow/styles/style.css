@@ -125,7 +125,6 @@ nav .buttons button:last-child:hover {
     color: var(--text-color);
     margin-bottom: 15px;
 }
-/* Media queries */
 /* Media query for mobile */
 @media (min-width: 320px) and (max-width: 480px) {
     nav h1 {

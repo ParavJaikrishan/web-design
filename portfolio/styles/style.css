@@ -55,10 +55,11 @@ nav .buttons button.selected {
     background: url("../images/computer-bg.png") no-repeat;
     background-size: cover;
     height: 450px;
+    width: 100%;
 }
 .splash .information {
     background-color: var(--primary-color);
-    height: 100%;
+    height: 450px;
     width: 750px;
     margin-left: 40px;
     display: flex;
@@ -117,14 +118,15 @@ nav .buttons button.selected {
     font-family: var(--secondary-font);
 }
 .projects .heading input::placeholder {
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 .projects .project-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin: 30px 240px;
+    margin: 30px auto;
+    width: 80%;
 }
 .projects .project-container div {
     margin: 0px 50px 30px 0;
@@ -135,4 +137,64 @@ nav .buttons button.selected {
     font-size: 18px;
     font-weight: 600;
     margin-top: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    nav h1 {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    nav .buttons {
+        margin-right: 20px;
+    }
+    nav .buttons button {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .splash .information {
+        margin: 0 auto;
+        width: 90%;
+        height: 100%;
+    }
+    .splash .information * {
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .splash .information h1 {
+        font-size: 35px;
+        width: 100%;
+        line-height: 1.2;
+    }
+    .splash .information p {
+        text-align: center;
+        font-size: 15px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .splash .information button {
+        margin: 0 auto;
+    }
+    .projects .heading {
+        margin: 90px 20px 0 20px;
+    }
+    .projects .heading h1 {
+        font-size: 14px;
+    }
+    .projects .heading input {
+        width: 150px;
+        padding: 7px;
+    }
+    .projects .project-container {
+        width: 100%;
+        justify-content: center;
+    }
+    .projects .project-container div {
+        margin: 0 auto 20px;
+        transform: scale(0.9);
+    }
+    .projects .project-container div h1 {
+        font-size: 18px;
+    }
 }

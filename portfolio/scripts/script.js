@@ -1,4 +1,5 @@
 const projectContainer = document.querySelector("#project-container");
+const searchbar = document.querySelector("#search-bar");
 
 const projectArr = [
     {
@@ -35,3 +36,15 @@ projectArr.forEach(project => {
     `;
     projectContainer.appendChild(div);
 });
+
+const projectDivs = document.querySelectorAll("#project-container div");
+
+searchbar.addEventListener("input", e => {
+    let val = e.target.value.toLowerCase();
+    projectArr.forEach((project, index) => {
+        if(!project.title.toLowerCase().includes(val))
+            projectDivs[index].style.display = "none";
+        else
+            projectDivs[index].style.display = "block";
+    })
+})

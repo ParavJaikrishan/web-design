@@ -2,6 +2,14 @@ const navbar = document.querySelector("#navbar");
 const searchBar = document.querySelector("#searchbar");
 const container = document.querySelector("#card-container");
 
+window.onscroll = function() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        navbar.classList.add("scroll");
+    } else {
+        navbar.classList.remove("scroll");
+    }
+}
+
 const songArr = [
     {
         image: "images/song1.jpg",
@@ -44,11 +52,17 @@ songArr.forEach(song => {
         <a href=${song.link} target="_blank">Visit <span class="arr">-></span></a>
     `;
     container.appendChild(elem);
+});
+
+const songDivs = document.querySelectorAll("#card-container div");
+
+searchBar.addEventListener("input", e => {
+    let val = e.target.value.toLowerCase();
+    songArr.forEach((song, index) => {
+        if(!song.title.toLowerCase().includes(val)) {
+            songDivs[index].style.display = "none";
+        } else {
+            songDivs[index].style.display = "block";
+        }
+    })
 })
-window.onscroll = function() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        navbar.classList.add("scroll");
-    } else {
-        navbar.classList.remove("scroll");
-    }
-}

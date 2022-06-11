@@ -5,6 +5,7 @@
     --logo-font: "Signika";
     --primary-color: #222;
     --secondary-color: #f7f7f7;
+    --dark-background-color: linear-gradient(0deg, rgba(0, 0, 0, 40%), rgba(0, 0, 0, 40%));
 }
 /* CSS reset */
 html, body {
@@ -91,8 +92,9 @@ nav.scroll .buttons a {
     justify-content: center;
     width: 100%;
     height: 950px;
-    background: url("../images/splash-bg.jpg") 140px;
+    background: var(--dark-background-color), url("../images/splash-bg.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .splash h1 {
@@ -191,4 +193,17 @@ nav.scroll .buttons a {
 }
 .section .card-container div h3, .section .card-container div h6, .section .card-container div a {
     padding-left: 15px;
+}
+/* Tribute section */
+.section.tribute {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+.section.tribute h1 {
+    color: var(--secondary-color);
+}
+.section.tribute iframe {
+    display: block;
+    margin: 30px auto;
 }

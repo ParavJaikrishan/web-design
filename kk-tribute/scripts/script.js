@@ -38,10 +38,10 @@ const songArr = [
 songArr.forEach(song => {
     let elem = document.createElement("div");
     elem.innerHTML = `
-        <img src=${song.image} alt=${song.title}/>
-        <h1>${song.title}</h1>
-        <h2>Krishnakumar Kunnath</h2>
-        <a href=${song.link} target="_blank">Visit -></a>
+        <img src="${song.image}" alt="${song.title}"/>
+        <h3>${song.title}</h1>
+        <h6>Krishnakumar Kunnath</h2>
+        <a href=${song.link} target="_blank">Visit <span class="arr">-></span></a>
     `;
     container.appendChild(elem);
 })

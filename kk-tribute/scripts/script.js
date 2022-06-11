@@ -36,13 +36,14 @@ const songArr = [
 ];
 
 songArr.forEach(song => {
-    let div = document.createElement(div);
-    div.innerHTML = `
+    let elem = document.createElement("div");
+    elem.innerHTML = `
         <img src=${song.image} alt=${song.title}/>
         <h1>${song.title}</h1>
         <h2>Krishnakumar Kunnath</h2>
         <a href=${song.link} target="_blank">Visit -></a>
     `;
+    container.appendChild(elem);
 })
 window.onscroll = function() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {

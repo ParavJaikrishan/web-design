@@ -1,7 +1,8 @@
 /* CSS variables */
 :root {
-    --header-font: "Signika";
-    --text-font: "Poppins";
+    --header-font: "Poppins";
+    --text-font: "Inter";
+    --logo-font: "Signika";
     --primary-color: #222;
     --secondary-color: #eeeeee;
 }
@@ -21,27 +22,69 @@ button:hover {
 }
 /* Navbar */
 nav {
+    position: fixed;
+    left: 0;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 90px;
     width: 100%;
     background-color: transparent;
+    transition: all 1s ease;
 }
 nav h1 {
     margin-left: 100px;
-    font-family: var(--header-font);
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 36px;
+    font-family: var(--logo-font);
+    color: var(--secondary-color);
+    font-weight: 800;
+    font-size: 40px;
+    transition: all 0.8s ease;
 }
 nav .buttons {
     margin-right: 100px;
 }
 nav .buttons button {
     font-family: var(--text-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 16px;
     font-weight: 400;
     margin-left: 35px;
+    transition: all 0.6s ease;
+}
+.splash {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/splash-bg.jpg") 290px -90px;
+    background-size: cover;
+}
+.splash h1 {
+    color: var(--secondary-color);
+    font-family: var(--header-font);
+    font-size: 72px;
+    margin-left: 100px;
+    margin-top: 250px;
+    line-height: 1.4;
+}
+.splash a {
+    margin-top: 30px;
+    color: var(--secondary-color);
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    border-radius: 100px;
+    margin-left: 100px;
+    width: 180px;
+    padding: 15px;
+    font-family: var(--text-font);
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.8s ease;
+}
+.splash a:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }

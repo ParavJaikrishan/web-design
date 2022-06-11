@@ -207,3 +207,15 @@ nav.scroll .buttons a {
     display: block;
     margin: 30px auto;
 }
+/* Footer */
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: var(--text-font);
+}
+footer a {
+    color: blue;
+    font-weight: bold;
+}

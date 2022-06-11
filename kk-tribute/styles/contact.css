@@ -1,0 +1,89 @@
+/* CSS variables */
+:root {
+    --header-font: "Poppins";
+    --text-font: "Inter";
+    --logo-font: "Signika";
+    --primary-color: #222;
+    --secondary-color: #f7f7f7;
+    --dark-background-color: linear-gradient(0deg, rgba(0, 0, 0, 40%), rgba(0, 0, 0, 40%));
+}
+/* CSS reset */
+html, body {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button, input, img {
+    border: none;
+    outline: none;
+    background: none;
+}
+a {
+    text-decoration: none;
+}
+button:hover, a:hover {
+    cursor: pointer;
+}
+/* Contact page styling */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #555;
+}
+.title {
+    text-align: center;
+    font-family: var(--header-font);
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+.container {
+    display: flex;
+    width: 70%;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 15px;
+}
+.container .left-div {
+    background-color: var(--primary-color);
+    border-radius: 10px 0 0 10px;
+    padding: 60px 40px;
+    width: 30%;
+}
+.container .left-div h1 {
+    font-family: var(--text-font);
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.container .left-div p {
+    font-family: var(--text-font);
+    color: var(--secondary-color);
+    opacity: 0.7;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.container .left-div .section {
+    margin-top: 50px;
+    color: var(--secondary-color);
+}
+.container .left-div .section .single-row {
+    display: flex;
+}
+.container .left-div .section .single-row span {
+    margin-right: 20px;
+}
+.container .left-div .section .single-row h3 {
+    font-family: var(--text-font);
+}
+.container .left-div .section p {
+    margin-left: 45px;
+    margin-top: 3px;
+}
+.container .left-div .section p.contact {
+    opacity: 1;
+    font-weight: bold;
+    margin-top: 6px;
+}

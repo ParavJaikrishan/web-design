@@ -145,3 +145,57 @@ a:hover {
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
+@media (min-width: 320px) and (max-width: 550px) {
+    .container {
+        flex-direction: column;
+        width: 85%;
+        margin-bottom: 40px;
+    }
+    .container .left-div,
+    .container .right-div {
+        width: 100%;
+    }
+    .container .left-div {
+        border-radius: 15px 15px 0 0;
+        padding: 30px 40px;
+    }
+    .container .left-div h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .container .left-div p.top {
+        text-align: center;
+    }
+    .container .left-div .section {
+        margin-top: 20px;
+    }
+    .container .left-div .section h2 {
+        font-size: 14px;
+    }
+    .container .left-div .section p {
+        font-size: 0.85rem;
+    }
+    .container .left-div .section.middle {
+        display: none;
+    }
+    .container .right-div {
+        width: 100%;
+    }
+    .container .right-div h2 {
+        margin-top: 20px;
+    }
+    .container .right-div p {
+        margin: 20px 30px;
+    }
+    .container .right-div input,
+    .container .right-div textarea,
+    .container .right-div button {
+        width: 80%;
+    }
+    a {
+        position: static;
+        width: fit-content;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+}

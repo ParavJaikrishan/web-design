@@ -219,3 +219,58 @@ footer a {
     color: blue;
     font-weight: bold;
 }
+/* Mobile responsiveness */
+@media (min-width: 320px) and (max-width: 550px) {
+    nav {
+        width: 100vw;
+    }
+    nav h1 {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    nav .buttons {
+        margin-right: 20px;
+    }
+    nav .buttons a {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .splash {
+        width: 100vw;
+        height: 540px;
+    }
+    .splash h1 {
+        margin: 0;
+        font-size: 40px;
+        text-align: center;
+    }
+    .splash a {
+        margin: 20px auto 0;
+    }
+    .section {
+        padding: 0;
+        margin: 0;
+    }
+    .section h1 {
+        font-size: 36px;
+        margin-top: 30px;
+    }
+    .section.songs input {
+        width: 80%;
+        margin: 20px auto 0;
+    }
+    .section.songs .card-container {
+        margin: 0;
+    }
+    .section.songs .card-container div {
+        margin: 50px 0 0;
+    }
+    .section.songs .card-container div img {
+        width: 250px;
+    }
+    .section.tribute iframe {
+        width: 320px;
+        height: 180px;
+        margin: 20px auto;
+    }
+}

@@ -117,6 +117,7 @@ body {
 }
 .container .right-div textarea {
     height: 120px;
+    outline: none;
 }
 .container .right-div button {
     color: var(--primary-color);

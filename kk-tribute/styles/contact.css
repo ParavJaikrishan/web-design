@@ -122,11 +122,7 @@ body {
     color: var(--primary-color);
 }
 .container .right-div button {
-    background-color: transparent;
-    color: #333;
-    transition: all 0.6s ease-in-out;
-}
-.container .right-div button:hover {
     background-color: #555;
     color: var(--secondary-color);
+    transition: all 0.6s ease-in-out;
 }
